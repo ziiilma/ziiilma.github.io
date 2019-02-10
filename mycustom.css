@@ -6,14 +6,10 @@ h3 {
     font-family: 'Jura', sans-serif;
     color: white;
   }
-  h2 {
+  h2,h4 {
     font-family: 'PT Mono', monospace;
   }
 .jumbotron {
   background-image: url(bg1-1.jpg);
   background-size: cover;
   }
-.niz {
-  background-image: url(bg2.jpg);
-  background-size: cover;
-}
