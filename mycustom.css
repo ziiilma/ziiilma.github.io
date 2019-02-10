@@ -1,5 +1,16 @@
+h1 {
+  font-family: 'Bungee Inline', cursive;
+  color: #FFF4E3;
+}
+h3 {
+    font-family: 'Jura', sans-serif;
+    color: white;
+  }
+  h2 {
+    font-family: 'PT Mono', monospace;
+  }
 .jumbotron {
-  background-image: url(bg1.jpg);
+  background-image: url(bg1-1.jpg);
   background-size: cover;
 
 }
