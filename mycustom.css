@@ -13,3 +13,16 @@ h3 {
   background-image: url(img/bg1-1.jpg);
   background-size: cover;
   }
+  #rudr_instafeed{
+    list-style:none
+  }
+  #rudr_instafeed li{
+    float:left;
+    width:200px;
+    height:200px;
+    margin:10px
+  }
+  #rudr_instafeed li img{
+    max-width:100%;
+    max-height:100%;
+  }
