@@ -53,7 +53,6 @@
 
 
 <div class="row">
-<<<<<<< HEAD
   <div class="container" id="rudr_instafeed">
         <script type="text/javascript">
     var token = '13001833358.d268e45.3250871c660d4f1fb890de32fcba0f16',
@@ -69,22 +68,6 @@ for( x in data.data ){
 
 scrElement.setAttribute( 'src', 'https://api.instagram.com/v1/users/self/media/recent?access_token=' + token + '&count=' + num_photos + '&callback=mishaProcessResult' );
 document.body.appendChild( scrElement );
-=======
-  <div class="container">
-    <ul id="rudr_instafeed">
-      <script type="text/javascript">
-      var token = '13001833358.d268e45.3250871c660d4f1fb890de32fcba0f16',
-    num_photos = 5,
-    container = document.getElementById( 'rudr_instafeed' ),
-    scrElement = document.createElement( 'script' );
-    window.mishaProcessResult = function( data )
-    for( x in data.data ){
-      container.innerHTML += '<li><img src="' + data.data[x].images.low_resolution.url + '"></li>';
-    }
-  }
-  scrElement.setAttribute( 'src', 'https://api.instagram.com/v1/users/self/media/recent?access_token=' + token + '&count=' + num_photos + '&callback=mishaProcessResult' );
-  document.body.appendChild( scrElement );
->>>>>>> 8ced6aad408667e5f6eb3da1de3a3f4c40a21126
 </script>
     </div>
 </div>
