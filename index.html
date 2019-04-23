@@ -46,14 +46,11 @@
           <dd class="col-sm-9"> <p>Это довольно увлекательное занятие, похоже на конструктор который вы сами создали! Для многих такая кухня может стать предметом гордости и проявления собственного креатива.</p></dd>
         </dl>
       </div>
-    </div>
-<!-- Карточки -->
-<div class="container">
-  <p>В данной статье будет рассмотрено создание эконом кухни которая прослужит вам от 5 до 10 лет, в зависит от интенсивности и бережливости использования. Для удобства разделим создание кухни на три этапа(Двоеточие?)</p>
 
+<!-- Карточки -->
 
 <div class="row">
-  <div class="container" id="rudr_instafeed">
+  <div class="card-group" id="rudr_instafeed">
         <script type="text/javascript">
     var token = '13001833358.d268e45.3250871c660d4f1fb890de32fcba0f16',
   num_photos = 4,
@@ -62,7 +59,7 @@
 
 window.mishaProcessResult = function( data ) {
 for( x in data.data ){
-  container.innerHTML += '<li><img src="' + data.data[x].images.low_resolution.url + '"></li>';
+  container.innerHTML += '<div class="card"><img src="' + data.data[x].images.low_resolution.url + '"></div>';
 }
 }
 
@@ -71,7 +68,7 @@ document.body.appendChild( scrElement );
 </script>
     </div>
 </div>
-
+</div>
 <!-- Глава 1 -->
     <div class="container">
       <h2 class="text-center"><a name="one"></a>Эскиз</h2>
