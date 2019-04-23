@@ -53,9 +53,8 @@
 
 
 <div class="row">
-  <div class="container">
-    <ul id="rudr_instafeed">
-    <script type="text/javascript">
+  <div class="container" id="rudr_instafeed">
+        <script type="text/javascript">
     var token = '13001833358.d268e45.3250871c660d4f1fb890de32fcba0f16',
   num_photos = 4,
   container = document.getElementById( 'rudr_instafeed' ),
@@ -70,8 +69,7 @@ for( x in data.data ){
 scrElement.setAttribute( 'src', 'https://api.instagram.com/v1/users/self/media/recent?access_token=' + token + '&count=' + num_photos + '&callback=mishaProcessResult' );
 document.body.appendChild( scrElement );
 </script>
-    </ul>
-  </div>
+    </div>
 </div>
 
 
