@@ -11,27 +11,29 @@
   <!-- Custom styles for this template -->
   <link href="mycustom.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Merriweather|Jura|PT+Mono" rel="stylesheet">
-
-  <!-- Google fonts
-  font-family: 'Bungee Inline', cursive;
-  font-family: 'Merriweather', serif;
-  font-family: 'PT Mono', monospace;
-  font-family: 'Jura', sans-serif;-->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:600|Open+Sans&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <!--
+  Google fonts
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Fira Sans Condensed', sans-serif;
+  -->
 </head>
 
 <body>
   <main role="main">
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <img src="img/fl2.png" class="card-img-top" alt="...">
+    <div class="align-items-center fon">
+      <div class="col">
+        <img src="img/fm1.png" class="img-fluid" alt="...">
       </div>
     </div>
 
     <div class="container">
-      <div class="col-sm-12">
-        <h2 class="Text-center">Кухня своими руками это просто</h2>
+      <div class="row">
+        <div class="h-25 d-inline-block">
+          <h1 class="Text-center display-1 text-uppercase">Кухня своими руками это просто</h1>
+        </div>
+
         <p>Для изготовления такой кухни вам понадобится минимальный опыт работы со столярным инструментом, время и желание сделать кухню самому. Есть несколько плюсов в создании такой кухни.</p>
         <dl class="row">
           <dt class="col-sm-3">Финансовая экономия</dt>
@@ -50,22 +52,8 @@
 <!-- Карточки -->
 
 <div class="row">
-  <div class="card-group" id="rudr_instafeed">
-        <script type="text/javascript">
-    var token = '13001833358.d268e45.3250871c660d4f1fb890de32fcba0f16',
-  num_photos = 4,
-  container = document.getElementById( 'rudr_instafeed' ),
-  scrElement = document.createElement( 'script' );
+  <div class="card-group ml-2" id="rudr_instafeed">
 
-window.mishaProcessResult = function( data ) {
-for( x in data.data ){
-  container.innerHTML += '<div class="card"><img src="' + data.data[x].images.low_resolution.url + '"></div>';
-}
-}
-
-scrElement.setAttribute( 'src', 'https://api.instagram.com/v1/users/self/media/recent?access_token=' + token + '&count=' + num_photos + '&callback=mishaProcessResult' );
-document.body.appendChild( scrElement );
-</script>
     </div>
 </div>
 </div>
@@ -125,6 +113,21 @@ document.body.appendChild( scrElement );
 Начнем расчет справа. Дно мойки будет 600, таким образом бока станут на него.
 </p>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
 
@@ -138,5 +141,20 @@ document.body.appendChild( scrElement );
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  var token = '13001833358.d268e45.3250871c660d4f1fb890de32fcba0f16',
+  num_photos = 4,
+  container = document.getElementById( 'rudr_instafeed' ),
+  scrElement = document.createElement( 'script' );
+
+  window.mishaProcessResult = function( data ) {
+  for( x in data.data ){
+  container.innerHTML += '<div class="card bg-dark btn" data-toggle="modal" data-target="#exampleModalCenter"><img class="img-fluid" src="' + data.data[x].images.standard_resolution.url + '"></div>';
+  }
+  }
+
+  scrElement.setAttribute( 'src', 'https://api.instagram.com/v1/users/self/media/recent?access_token=' + token + '&count=' + num_photos + '&callback=mishaProcessResult' );
+  document.body.appendChild( scrElement );
+  </script>
 </body>
 </html>
