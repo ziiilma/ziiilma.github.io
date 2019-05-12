@@ -49,15 +49,12 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-4">
+    <div class="col-3">
 <h1 class="display-4">Мы Furniture Makers делаем качественно стильно практично</h1>
     </div>
-    <div class="col-8">
+    <div class="row col-sm-9 no-gutters" id="rudr_instafeed">
 
-      <div class="container" id="rudr_instafeed">
-        <div class="container-fluid" >
-      </div>
-    </div>
+
   </div>
 </div>
 
@@ -73,13 +70,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="text/javascript">
     var token = '13001833358.d268e45.3250871c660d4f1fb890de32fcba0f16',
-    num_photos = 12,
+    num_photos = 9,
     container = document.getElementById( 'rudr_instafeed' ),
     scrElement = document.createElement( 'script' );
 
     window.mishaProcessResult = function( data ) {
     for( x in data.data ){
-    container.innerHTML += '<div data-toggle="modal" data-target="#exampleModalCenter"><img class="img-fluid" src="' + data.data[x].images.standard_resolution.url + '"></div>';
+    container.innerHTML += '<div class="col-4" ><img class="img-fluid" src="' + data.data[x].images.standard_resolution.url + '"></div>';
     }
     }
 
