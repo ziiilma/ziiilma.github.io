@@ -9,6 +9,9 @@ h1, h2, h3 {
   font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 
+#contact {
+  font-size: 2rem;
+}
 
 a,
 a:focus,
@@ -109,7 +112,7 @@ body {
  * Cover
  */
 .cover {
-  padding: 0 1.5rem;
+  padding: 1 2.5rem;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
