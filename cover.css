@@ -72,6 +72,10 @@ body {
    background-size: cover;
  }
 
+ .s {
+   width: 22rem;
+ }
+
 .masthead {
   margin-bottom: 2rem;
 }
