@@ -73,7 +73,7 @@ body {
  }
 
  .s {
-   width: 22rem;
+   max-width: 22rem;
  }
 
 .masthead {
